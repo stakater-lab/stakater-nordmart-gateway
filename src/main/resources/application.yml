@@ -1,0 +1,33 @@
+server:
+  port: ${HTTP_PORT:9090}
+
+logging:
+  level:
+    org.springframework: TRACE
+
+spring:
+  cloud:
+    gateway:
+#      default-filters:
+#      - name: GatewayGlobalFilter
+      routes:
+        - id: catalogService
+          uri: http://${CATALOG_API_HOST:localhost}:${CATALOG_API_PORT:8090}
+          predicates:
+          - Path=/api/products/**
+        - id: cartService
+          uri: http://${CART_API_HOST:localhost}:${CART_API_PORT:8080}
+          predicates:
+            - Path=/api/cart/**
+        - id: reviewService
+          uri: http://${REVIEW_API_HOST:localhost}:${REVIEW_API_PORT:8080}
+          predicates:
+            - Path=/api/review/**
+        - id: searchService
+          uri: http://${PRODUCT_SEARCH_API_HOST:localhost}:${PRODUCT_SEARCH_API_PORT:8080}
+          predicates:
+            - Path=/api/v1/product-search/**
+        - id: customerService
+          uri: http://${CUSTOMER_API_HOST:localhost}:${CUSTOMER_API_PORT:8080}
+          predicates:
+            - Path=/api/customers/**
