@@ -39,9 +39,9 @@
 			<version>0.3.11</version>
 		</dependency>
 		<dependency>
-			<groupId>com.uber.jaeger</groupId>
+			<groupId>io.jaegertracing</groupId>
 			<artifactId>jaeger-core</artifactId>
-			<version>0.21.0</version>
+			<version>${version.jaeger}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.uber.jaeger</groupId>
@@ -79,6 +79,7 @@
 	</dependencyManagement>
 
 	<build>
+		<defaultGoal>spring-boot:run</defaultGoal>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
