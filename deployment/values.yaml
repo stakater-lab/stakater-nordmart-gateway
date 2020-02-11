@@ -28,31 +28,31 @@ deployment:
   volumes: {}
   env:
   - name: CATALOG_API_HOST
-    value: "catalog.default.svc.cluster.local"
+    value: "catalog"
   - name: CATALOG_API_PORT
     value: "8080"
   - name: CUSTOMER_API_HOST
-    value: "customer.default.svc.cluster.local"
+    value: "customer"
   - name: CUSTOMER_API_PORT
     value: "8080"
   - name: INVENTORY_API_HOST
-    value: "inventory.default.svc.cluster.local"
+    value: "inventory"
   - name: INVENTORY_API_PORT
     value: "8080"
   - name: DISABLE_CART_DISCOVERY
     value: "false"
   - name: CART_API_HOST
-    value: "cart.default.svc.cluster.local"
+    value: "cart"
   - name: CART_API_PORT
     value: "8080"
   - name: HTTP_PORT
     value: "8080"
   - name: REVIEW_API_HOST
-    value: "review.default.svc.cluster.local"
+    value: "review"
   - name: REVIEW_API_PORT
     value: "8080"
   - name: PRODUCT_SEARCH_API_HOST
-    value: "search.default"
+    value: "search"
   - name: PRODUCT_SEARCH_API_PORT
     value: "8080"
   - name: JAEGER_ENDPOINT
