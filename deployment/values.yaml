@@ -4,8 +4,8 @@ deployment:
   podLabels:
     app: gateway
   image:
-    repository: stakater/gateway-vertx
-    tag: v0.0.1
+    repository: stakater/stakater-nordmart-gateway
+    tag: v0.0.3
   probes:
     readinessProbe:
       failureThreshold: 3
