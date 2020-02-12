@@ -22,5 +22,5 @@ releaseApplication {
     kubernetesPublicChartRepositoryURL = "https://stakater.github.io/stakater-charts"
     kubernetesChartName = "stakater/application"
     kubernetesChartVersion = "0.0.12"
-    kubernetesNamespace = "default"
+    kubernetesNamespace = "NAMESPACE"
 }
