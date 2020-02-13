@@ -5,7 +5,7 @@ deployment:
     app: gateway
   image:
     repository: stakater/stakater-nordmart-gateway
-    tag: v0.0.3
+    tag: v0.0.4
   probes:
     readinessProbe:
       failureThreshold: 3
