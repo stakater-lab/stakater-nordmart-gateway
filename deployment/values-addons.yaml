@@ -1,5 +1,7 @@
 applicationName: "gateway"
 deployment:
+  additionalLabels:
+    appCategory: "backend"
   annotations:
   podLabels:
     app: gateway
