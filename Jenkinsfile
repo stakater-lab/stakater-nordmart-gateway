@@ -1,21 +1,14 @@
 #!/usr/bin/env groovy
-@Library('github.com/stakater/stakater-pipeline-library@v2.16.18') _
+@Library('github.com/stakater/stakater-pipeline-library@v2.16.19') _
 
-releaseApplication {
-    appName = "gateway"
-    appType = "maven"
-    builderImage = "stakater/builder-maven:3.5.4-jdk1.8-apline8-v0.0.3"
-    goal = "clean package"
-    notifySlack = true
-    runIntegrationTest = false
-    gitUser = "stakater-user"
-    gitEmail = "stakater@gmail.com"
-    usePersonalAccessToken = true
-    tokenCredentialID = 'GithubToken'
+releaseApplication {    tokenCredentialID = 'GithubToken'
+
     serviceAccount = "jenkins"
     dockerRepositoryURL = 'docker.delivery.stakater.com:443'
     // configuration parameter for e2e tests
-    e2eTestJob = false
+    e2eTestJob = false    tokenCredentialID = 'GithubToken'    tokenCredentialID = 'GithubToken'
+
+
     e2eJobName = "../stakater-nordmart-e2e-tests/master"
     // configuration for generating kubernetes manifests
     kubernetesGenerateManifests = true
