@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.stakater.nordmart</groupId>
 	<artifactId>gateway</artifactId>
-	<version>v0.0.4</version>
+	<version>v0.0.5</version>
 	<name>gateway</name>
 	<description>Secure gateway to propagate REST API calls from front-end to back-end</description>
 
