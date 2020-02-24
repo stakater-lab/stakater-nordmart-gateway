@@ -1,7 +1,7 @@
 FROM gcr.io/distroless/java:8
 
 LABEL name="Gateway Service" \
-      maintainer="Stakater <hello@stakater.com>" \
+      maintainer="hello@stakater.com" \
       vendor="Stakater" \
       release="1" \
       summary="Project containing secure gateway to propagate REST API calls from front-end to back-end"
