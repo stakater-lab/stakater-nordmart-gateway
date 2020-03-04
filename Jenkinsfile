@@ -23,5 +23,5 @@ releaseApplication {
     kubernetesChartName = "stakater/application"
     kubernetesChartVersion = "0.0.13"
     kubernetesNamespace = "NAMESPACE_NAME"
-    commitToManifestsRepo = true
+    commitToManifestsRepo = false
 }
