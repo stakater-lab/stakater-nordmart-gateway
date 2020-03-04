@@ -67,7 +67,7 @@ service:
 rbac:
   create: true
   serviceAccount:
-    name: "default"
+    create: true
 configMap:
   enabled: false
 
